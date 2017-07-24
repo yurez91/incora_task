@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Credit cards</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+                <div class="col1">
+                    <div class="card">
+                        <div class="front">
+                            <div class="type">
+                                <img class="bankid">
+                            </div>
+                            <span class="chip"></span>
+                            <span class="card_number">&#x25CF;&#x25CF;&#x25CF;&#x25CF; &#x25CF;&#x25CF;&#x25CF;&#x25CF; &#x25CF;&#x25CF;&#x25CF;&#x25CF; &#x25CF;&#x25CF;&#x25CF;&#x25CF; </span>
+                            <div class="date"><span class="date_value">&#x25CF;&#x25CF;/&#x25CF;&#x25CF;</span></div>
+                            <span class="fullname">FULL NAME</span>
+                        </div>
+                        <div class="back">
+                            <div class="magnetic"></div>
+                            <div class="bar"></div>
+                            <span class="seccode">&#x25CF;&#x25CF;&#x25CF;</span>
+                            <span class="chip"></span>
+                            <span class="disclaimer">This card is property of Privat Bank of PB corporation. <br> If found please return to Privat Bank - 79000 Lviv, Franko Street, 27 </span>
+                        </div>
+                    </div>
+                </div>
+                <form action="">
+                    <div class="form-group">
+                        <label for="InputCardNumber">Card Number</label>
+                        <input type="text" class="form-control credit_number" id="InputCardNumber" maxlength="19" placeholder="Card number" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                    </div>
+                    <div class="form-group">
+                        <label for="InputFullName">Full Name</label>
+                        <input type="text" class="form-control inputname" id="InputFullName" placeholder="Full name">
+                    </div>
+                    <div class="form-group">
+                        <label for="InputExpiry">Expiry</label>
+                        <input type="text" class="form-control date_expire" id="InputExpiry" placeholder="MM/YY">
+                    </div>
+                    <div class="form-group">
+                        <label for="InputCVC">CVC</label>
+                        <input type="text" class="form-control cvc" id="InputCVC" placeholder="CVC" maxlength="3" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
